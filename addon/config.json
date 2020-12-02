@@ -1,10 +1,10 @@
 {
-    "name": "Tile Board",
+    "name": "TileBoard",
     "version": "2.1.2",
-    "slug": "tile_board",
-    "description": "TileBoard Addon",
+    "slug": "tileboard",
+    "description": "Simple yet highly-customizable dashboard for Home Assistant",
     "url": "https://github.com/resoai/TileBoard",
-    "webui": "http://[HOST]:[PORT:8080]",
+    "webui": "[PROTO:ssl]://[HOST]:[PORT:8090]",
     "startup": "application",
     "init": false,
     "image": "tileboard/tileboard-addon-{arch}",
@@ -22,13 +22,13 @@
     "hassio_api": true,
     "hassio_role": "default",
     "ports": {
-      "80/tcp": 8080
+      "80/tcp": 8090
     },
     "ports_description": {
       "80/tcp": "Dashboard interface"
     },
     "options": {
-      "configFolder": "tile-board"
+      "configFolder": "tileboard"
     },
     "schema": {
       "configFolder": "str"

@@ -8,8 +8,8 @@ CONFIG_FOLDER=$(bashio::config 'configFolder')
 
 bashio::log.info 'Symlink files to dist folder'
 
-for f in /config/www/$CONFIG_FOLDER/*; 
-do 
+for f in /config/www/$CONFIG_FOLDER/*;
+do
     FILENAME=$(basename $f);
     if [ $FILENAME = 'custom.css' ]
     then

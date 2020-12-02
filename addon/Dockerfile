@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.5
+ARG BUILD_FROM=hassioaddons/base:8.0.6
 FROM ${BUILD_FROM}
 
 # Build arguments
@@ -26,12 +26,12 @@ COPY rootfs /
 # Labels
 LABEL \
     io.hass.name="TileBoard" \
-    io.hass.description="Home Assistant Tile Board addon" \
+    io.hass.description="Home Assistant TileBoard addon" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="anthony2856" \
-    org.label-schema.description="Home Assistant Tile Board addon" \
+    org.label-schema.description="Home Assistant TileBoard addon" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="TileBoard" \
     org.label-schema.schema-version=${BUILD_VERSION} \
