@@ -7,7 +7,7 @@
 	"appPort": 8123,
 	"forwardPorts": [
 		8123,
-		8080,
+		8080
 	],
 	"runArgs": [
 		"-e",
