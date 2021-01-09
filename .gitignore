@@ -1,0 +1,8 @@
+*.db
+*.map
+.DS_Store
+/.cache/
+/.idea/
+/build/
+/includes/
+/node_modules/

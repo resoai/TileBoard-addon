@@ -1,0 +1,22 @@
+{
+  "name": "tileboard-addon",
+  "version": "1.0.0",
+  "description": "Home Assistant Addon for TileBoard",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "auto-changelog --output ./addon/CHANGELOG.md --commit-limit false --hide-credit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resoai/TileBoard-addon.git"
+  },
+  "author": "Rafal Chlodnicki <rchl2k+tileboard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resoai/TileBoard-addon/issues"
+  },
+  "homepage": "https://github.com/resoai/TileBoard-addon#readme",
+  "devDependencies": {
+    "auto-changelog": "^2.2.1"
+  }
+}
