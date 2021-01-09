@@ -25,4 +25,4 @@ jobs:
           args: |
             --all \
             --target ./addon \
-            --docker-hub ${{ secrets.DOCKERHUB_USERNAME }}
+            --docker-hub tileboard
