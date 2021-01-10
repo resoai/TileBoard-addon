@@ -8,14 +8,14 @@ CONFIG_FOLDER=$(bashio::config 'configFolder')
 
 bashio::log.info 'Symlink files to dist folder'
 
-for f in /config/www/$CONFIG_FOLDER/*;
+for f in /config/$CONFIG_FOLDER/*;
 do
     FILENAME=$(basename $f);
     if [ $FILENAME = 'custom.css' ]
     then
-        rm /var/www/tileboard/styles/custom.css
-        ln -s /config/www/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/styles/custom.css
+        rm /var/tileboard/styles/custom.css
+        ln -s /config/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/styles/custom.css
     else
-        ln -s /config/www/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/$FILENAME
+        ln -s /config/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/$FILENAME
     fi;
 done;
