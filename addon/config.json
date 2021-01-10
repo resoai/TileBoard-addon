@@ -1,36 +1,36 @@
 {
-    "name": "TileBoard",
-    "version": "2.1.2",
-    "slug": "tileboard",
-    "description": "Simple yet highly-customizable dashboard for Home Assistant",
-    "url": "https://github.com/resoai/TileBoard",
-    "webui": "[PROTO:ssl]://[HOST]:[PORT:8090]",
-    "startup": "application",
-    "init": false,
-    "image": "tileboard/tileboard-addon-{arch}",
-    "arch": [
-      "armhf",
-      "armv7",
-      "aarch64",
-      "amd64",
-      "i386"
-    ],
-    "map": [
-      "config"
-    ],
-    "boot": "auto",
-    "hassio_api": true,
-    "hassio_role": "default",
-    "ports": {
-      "80/tcp": 8090
-    },
-    "ports_description": {
-      "80/tcp": "Dashboard interface"
-    },
-    "options": {
-      "configFolder": "tileboard"
-    },
-    "schema": {
-      "configFolder": "str"
-    }
+  "name": "TileBoard",
+  "version": "1.0.0",
+  "slug": "tileboard",
+  "description": "Simple yet highly-customizable dashboard for Home Assistant",
+  "url": "https://github.com/resoai/TileBoard",
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:8090]",
+  "startup": "application",
+  "init": false,
+  "image": "tileboard/tileboard-addon-{arch}",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "map": [
+    "config"
+  ],
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "ports": {
+    "80/tcp": 8090
+  },
+  "ports_description": {
+    "80/tcp": "Dashboard interface"
+  },
+  "options": {
+    "configFolder": "tileboard"
+  },
+  "schema": {
+    "configFolder": "str"
   }
+}

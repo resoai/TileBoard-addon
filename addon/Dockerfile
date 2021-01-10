@@ -12,9 +12,11 @@ ENV LANG C.UTF-8
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+COPY .tileboard_version /
+
 # Setup base
 RUN apk add --no-cache nginx curl unzip \
-        && curl -L https://github.com/resoai/TileBoard/releases/download/v${BUILD_VERSION}/TileBoard.zip > /tmp/tileboard.zip \
+        && curl -v -L https://github.com/resoai/TileBoard/releases/download/v$(</.tileboard_version)/TileBoard.zip > /tmp/tileboard.zip \
         && unzip /tmp/tileboard.zip -d /var/www/tileboard \
         && rm /tmp/tileboard.zip \
         && rm -rf /var/www/tileboard/images \

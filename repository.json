@@ -1,5 +1,5 @@
 {
-    "name": "Home Assistant Add-on: TileBoard",
-    "url": "https://github.com/resoai/TileBoard",
-    "maintainer": "Rafal Chlodnicki <rchl2k+tileboard@gmail.com>"
+  "name": "Home Assistant Add-on: TileBoard",
+  "url": "https://github.com/resoai/TileBoard",
+  "maintainer": "Rafal Chlodnicki <rchl2k+tileboard@gmail.com>"
 }

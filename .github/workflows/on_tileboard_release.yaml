@@ -12,7 +12,7 @@ on:
 
 jobs:
   build-addon:
-    name: Build Add-on
+    name: Bump TileBoard
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -30,15 +30,15 @@ jobs:
         run: |
           git config --local user.email "invalid@email.com"
           git config --local user.name "Autorelease"
-          sed -i -E 's/("version"): "[^"]+"/\1: "${{ github.event.inputs.version }}"/' ./addon/config.json
-          git add ./addon/config.json
-          git commit -m 'chore: bump TileBoard version to "${{ github.event.inputs.version }}"'
-          yarn changelog --latest-version ${{ github.event.inputs.version }}
-          git add ./addon/CHANGELOG.md
-          git commit -m 'chore(release): ${{ github.event.inputs.version }}'
-          git tag ${{ github.event.inputs.version }}
-          git push --tags
-          git push
+          echo '${{ github.event.inputs.version }}' > ./addon/.tileboard_version
+          git add ./addon/.tileboard_version
+          git commit -m 'chore: bump TileBoard version to v${{ github.event.inputs.version }}'
+
+      - name: Create release
+        run: yarn release
+
+      # Publish the addon. This needs to be repeated in this workflow as pushing a new tag from a workflow
+      # won't trigger the on_push workflow.
 
       - name: Login to DockerHub
         uses: docker/login-action@v1
@@ -53,3 +53,9 @@ jobs:
             --all \
             --target ./addon \
             --docker-hub tileboard
+
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+
