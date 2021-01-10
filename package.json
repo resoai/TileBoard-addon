@@ -7,6 +7,7 @@
   },
   "standard-version": {
     "infile": "./addon/CHANGELOG.md",
+    "header": "",
     "bumpFiles": [
       "package.json",
       {

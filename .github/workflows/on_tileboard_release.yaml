@@ -30,8 +30,9 @@ jobs:
         run: |
           git config --local user.email "invalid@email.com"
           git config --local user.name "Autorelease"
-          echo '${{ github.event.inputs.version }}' > ./addon/.tileboard_version
-          git add ./addon/.tileboard_version
+          jq  '.args.TILEBOARD_VERSION = "${{ github.event.inputs.version }}"' addon/build.json > addon/build_new.json
+          mv addon/build_new.json addon/build.json
+          git add ./addon/build.json
           git commit -m 'chore: bump TileBoard version to v${{ github.event.inputs.version }}'
 
       - name: Create release
@@ -53,14 +54,3 @@ jobs:
             --all \
             --target ./addon \
             --docker-hub tileboard
-
-      - name: Get Latest Tag
-        uses: WyriHaximus/github-action-get-previous-tag@1.0.0
-        id: get_latest_tag
-
-      - uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          prerelease: false
-          automatic_release_tag: ${{ steps.get_latest_tag.outputs.tag }}
-

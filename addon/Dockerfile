@@ -6,17 +6,16 @@ ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
+ARG TILEBOARD_VERSION
 
 ENV LANG C.UTF-8
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-COPY .tileboard_version /
-
 # Setup base
 RUN apk add --no-cache nginx curl unzip \
-        && curl -v -L https://github.com/resoai/TileBoard/releases/download/v$(</.tileboard_version)/TileBoard.zip > /tmp/tileboard.zip \
+        && curl -v -L https://github.com/resoai/TileBoard/releases/download/v${TILEBOARD_VERSION}/TileBoard.zip > /tmp/tileboard.zip \
         && unzip /tmp/tileboard.zip -d /var/www/tileboard \
         && rm /tmp/tileboard.zip \
         && rm -rf /var/www/tileboard/images \
