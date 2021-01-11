@@ -33,24 +33,5 @@ jobs:
           jq  '.args.TILEBOARD_VERSION = "${{ github.event.inputs.version }}"' addon/build.json > addon/build_new.json
           mv addon/build_new.json addon/build.json
           git add ./addon/build.json
-          git commit -m 'chore: bump TileBoard version to v${{ github.event.inputs.version }}'
-
-      - name: Create release
-        run: yarn release
-
-      # Publish the addon. This needs to be repeated in this workflow as pushing a new tag from a workflow
-      # won't trigger the on_push workflow.
-
-      - name: Login to DockerHub
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Publish
-        uses: home-assistant/builder@master
-        with:
-          args: |
-            --all \
-            --target ./addon \
-            --docker-hub tileboard
+          git commit -m 'chore(bump): TileBoard ${{ github.event.inputs.release_url }}'
+          git push --follow-tags
