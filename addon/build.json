@@ -8,6 +8,6 @@
     "i386": "hassioaddons/base-i386:8.0.6"
   },
   "args": {
-    "TILEBOARD_VERSION": "2.1.2"
+    "TILEBOARD_VERSION": "2.1.3"
   }
 }
