@@ -1,4 +1,16 @@
 
+### [1.0.3](https://github.com/resoai/TileBoard-addon/compare/v1.0.2...v1.0.3) (2021-02-12)
+
+
+### Bug Fixes
+
+* use correct docker images and add test action ([#2](https://github.com/resoai/TileBoard-addon/issues/2)) ([b2642ee](https://github.com/resoai/TileBoard-addon/commit/b2642eef8a883137b885679ce90aa205cdaa1735))
+
+
+### Chore
+
+* **ci:** fix branch name ([4dc32c8](https://github.com/resoai/TileBoard-addon/commit/4dc32c820fb27867558eca0a9a4e1c6fd84223f4))
+
 ### [1.0.2](https://github.com/resoai/TileBoard-addon/compare/v1.0.1...v1.0.2) (2021-02-12)
 
 
