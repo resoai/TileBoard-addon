@@ -1,4 +1,12 @@
 
+### [1.0.4](https://github.com/resoai/TileBoard-addon/compare/v1.0.3...v1.0.4) (2021-02-12)
+
+
+### Chore
+
+* **build:** change maintainer name ([7c0ae60](https://github.com/resoai/TileBoard-addon/commit/7c0ae608ca7d2d170925bee4d6a68f7a89b4a48b))
+* **build:** switch to GH docker repo ([#3](https://github.com/resoai/TileBoard-addon/issues/3)) ([0dd20a7](https://github.com/resoai/TileBoard-addon/commit/0dd20a74014da5fb64e4fcbb8dbe9d442501fa79))
+
 ### [1.0.3](https://github.com/resoai/TileBoard-addon/compare/v1.0.2...v1.0.3) (2021-02-12)
 
 
