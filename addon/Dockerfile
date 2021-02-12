@@ -1,5 +1,5 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.6
-FROM ${BUILD_FROM}
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 # Build arguments
 ARG BUILD_ARCH
@@ -14,12 +14,22 @@ ENV LANG C.UTF-8
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
-RUN apk add --no-cache nginx curl unzip \
-        && curl -v -L https://github.com/resoai/TileBoard/releases/download/v${TILEBOARD_VERSION}/TileBoard.zip > /tmp/tileboard.zip \
-        && unzip /tmp/tileboard.zip -d /var/www/tileboard \
-        && rm /tmp/tileboard.zip \
-        && rm -rf /var/www/tileboard/images \
-        && apk del --no-cache --purge curl unzip
+RUN \
+    set -x \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends \
+        curl \
+        nginx \
+        unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Fetch and unpack TileBoard
+RUN \
+    set -x \
+    && curl -v -L -o /tileboard.zip https://github.com/resoai/TileBoard/releases/download/v${TILEBOARD_VERSION}/TileBoard.zip \
+    && unzip /tileboard.zip -d /var/www/tileboard \
+    && rm -f /tileboard.zip \
+    && rm -rf /var/www/tileboard/images
 
 # Copy root filesystem
 COPY rootfs /
