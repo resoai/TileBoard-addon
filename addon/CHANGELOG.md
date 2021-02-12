@@ -1,4 +1,17 @@
 
+### [1.0.2](https://github.com/resoai/TileBoard-addon/compare/v1.0.1...v1.0.2) (2021-02-12)
+
+
+### Bug Fixes
+
+* don't remove curl from the container after using ([963d5fb](https://github.com/resoai/TileBoard-addon/commit/963d5fb8877a76a2fb7b04951e05099834b46e54))
+* **readme:** config path ([c1d645a](https://github.com/resoai/TileBoard-addon/commit/c1d645a980d988af3b4d543dc51d2cbe1d6276bc))
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.1.3 ([154c3da](https://github.com/resoai/TileBoard-addon/commit/154c3da777712899bb856af4f24249e0dfcb3b54))
+
 ### 1.0.1 (2021-01-11)
 
 
