@@ -16,12 +16,11 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 RUN \
     set -x \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends \
+    && apk add --no-cache \
         curl \
         nginx \
         unzip \
-    && rm -rf /var/lib/apt/lists/*
+    && apk del --no-cache
 
 # Fetch and unpack TileBoard
 RUN \
