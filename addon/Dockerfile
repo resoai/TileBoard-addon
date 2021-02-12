@@ -40,7 +40,7 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="anthony2856" \
+    maintainer="rchl" \
     org.label-schema.description="Home Assistant TileBoard addon" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="TileBoard" \
