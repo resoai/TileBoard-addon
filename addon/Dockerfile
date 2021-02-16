@@ -27,8 +27,7 @@ RUN \
     set -x \
     && curl -v -L -o /tileboard.zip https://github.com/resoai/TileBoard/releases/download/v${TILEBOARD_VERSION}/TileBoard.zip \
     && unzip /tileboard.zip -d /var/www/tileboard \
-    && rm -f /tileboard.zip \
-    && rm -rf /var/www/tileboard/images
+    && rm -f /tileboard.zip
 
 # Copy root filesystem
 COPY rootfs /
