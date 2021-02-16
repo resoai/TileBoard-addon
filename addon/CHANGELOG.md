@@ -1,4 +1,11 @@
 
+### [1.0.5](https://github.com/resoai/TileBoard-addon/compare/v1.0.4...v1.0.5) (2021-02-16)
+
+
+### Bug Fixes
+
+* Don't remove images folder from the container ([b21ca09](https://github.com/resoai/TileBoard-addon/commit/b21ca09ea14da3b6855adb6e22180bdc558b66ce)), closes [#4](https://github.com/resoai/TileBoard-addon/issues/4)
+
 ### [1.0.4](https://github.com/resoai/TileBoard-addon/compare/v1.0.3...v1.0.4) (2021-02-12)
 
 
