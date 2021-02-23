@@ -44,6 +44,6 @@
   },
   "homepage": "https://github.com/resoai/TileBoard-addon#readme",
   "devDependencies": {
-    "standard-version": "^9.1.0"
+    "standard-version": "9.1.0"
   }
 }
