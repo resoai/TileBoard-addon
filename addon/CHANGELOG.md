@@ -1,4 +1,13 @@
 
+### [1.0.6](https://github.com/resoai/TileBoard-addon/compare/v1.0.5...v1.0.6) (2021-03-03)
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.2.0 ([3fdd000](https://github.com/resoai/TileBoard-addon/commit/3fdd000f37cf9d0b490b6c3111d4011ae3dba734))
+* configure Renovate ([#5](https://github.com/resoai/TileBoard-addon/issues/5)) ([1f65710](https://github.com/resoai/TileBoard-addon/commit/1f6571045d065051df657d60e8322c06631f90be))
+* don't pin dependencies ([762b98f](https://github.com/resoai/TileBoard-addon/commit/762b98fe28fc5ab5f36852db2eea4fdc3b83f195))
+
 ### [1.0.5](https://github.com/resoai/TileBoard-addon/compare/v1.0.4...v1.0.5) (2021-02-16)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "TileBoard",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "slug": "tileboard",
   "description": "Simple yet highly-customizable dashboard for Home Assistant",
   "url": "https://github.com/resoai/TileBoard",
