@@ -8,6 +8,6 @@
     "i386": "ghcr.io/hassio-addons/base/i386:9.1.2"
   },
   "args": {
-    "TILEBOARD_VERSION": "2.1.3"
+    "TILEBOARD_VERSION": "2.2.0"
   }
 }
