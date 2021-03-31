@@ -13,7 +13,9 @@ do
     FILENAME=$(basename $f);
     if [ $FILENAME = 'custom.css' ]
     then
-        rm /var/tileboard/styles/custom.css
+        if [ -f "/var/www/tileboard/styles/custom.css" ]; then
+            rm /var/www/tileboard/styles/custom.css
+        fi
         ln -s /config/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/styles/custom.css
     else
         ln -s /config/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/$FILENAME

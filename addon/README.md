@@ -7,6 +7,7 @@ This is the addon implementation of the TileBoard project. It allows you to only
 * Make sure that you have Home Assistant 0.77 or greater installed as only new authentication system is supported from now on
 * Configure a `configFolder` path in configuration tab. This path should be a folder inside `config`.
 * In the configurated folder add your config file(s). Feel free to add a `images` folder to add your own images.
+* If you want to use custom.css, place it in `configFolder` as custom.css
 
 ## Links
 
