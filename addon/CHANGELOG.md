@@ -1,4 +1,22 @@
 
+### [1.0.7](https://github.com/resoai/TileBoard-addon/compare/v1.0.6...v1.0.7) (2021-04-05)
+
+
+### Bug Fixes
+
+* wrong path to custom.css ([#11](https://github.com/resoai/TileBoard-addon/issues/11)) ([89709c4](https://github.com/resoai/TileBoard-addon/commit/89709c413dd319a7efe590e1da409ab1acd6668d))
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.3.0 ([9dd4b4f](https://github.com/resoai/TileBoard-addon/commit/9dd4b4fdbf7ece3838badcd7bd4a4a9cd6d729f1))
+* **ci:** try to make tokens work when third-party creates PR ([25aae12](https://github.com/resoai/TileBoard-addon/commit/25aae1254c89d21523ee28f5f7a9c2c92dbcbccb))
+* **deps:** lock file maintenance ([#10](https://github.com/resoai/TileBoard-addon/issues/10)) ([e8e0be6](https://github.com/resoai/TileBoard-addon/commit/e8e0be6659bf8c29a3bcdba0a5e52abe2adc0ea3))
+* **deps:** lock file maintenance ([#7](https://github.com/resoai/TileBoard-addon/issues/7)) ([19002b0](https://github.com/resoai/TileBoard-addon/commit/19002b0125416a598c76ec4c038d1833ea7e56e9))
+* **deps:** lock file maintenance ([#8](https://github.com/resoai/TileBoard-addon/issues/8)) ([5b9cb84](https://github.com/resoai/TileBoard-addon/commit/5b9cb84898f502db57b9be1a86e5ad7832ad6bae))
+* **deps:** lock file maintenance ([#9](https://github.com/resoai/TileBoard-addon/issues/9)) ([13f4a5e](https://github.com/resoai/TileBoard-addon/commit/13f4a5ee50678b6deaa3df8ece12631fdc0e5abc))
+* update renovate settings ([d62ff3b](https://github.com/resoai/TileBoard-addon/commit/d62ff3b77ab53c473ba0acefc6887a0ddc656d6a))
+
 ### [1.0.6](https://github.com/resoai/TileBoard-addon/compare/v1.0.5...v1.0.6) (2021-03-03)
 
 
