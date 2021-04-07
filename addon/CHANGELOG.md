@@ -1,4 +1,12 @@
 
+### [1.0.9](https://github.com/resoai/TileBoard-addon/compare/v1.0.8...v1.0.9) (2021-04-07)
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.3.1 ([1fde9fb](https://github.com/resoai/TileBoard-addon/commit/1fde9fbab44b4ed9e0e1ee40896b6563a5d20d67))
+* **ci:** better invalid email ([31f1ff9](https://github.com/resoai/TileBoard-addon/commit/31f1ff9066af2c81997ca02f28a762332556d660))
+
 ### [1.0.8](https://github.com/resoai/TileBoard-addon/compare/v1.0.6...v1.0.8) (2021-04-07)
 
 
