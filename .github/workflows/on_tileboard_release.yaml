@@ -28,7 +28,7 @@ jobs:
 
       - name: Update version
         run: |
-          git config --local user.email "invalid@email.com"
+          git config --local user.email "autorelease-invalid@email.com"
           git config --local user.name "Autorelease"
           jq  '.args.TILEBOARD_VERSION = "${{ github.event.inputs.version }}"' addon/build.json > addon/build_new.json
           mv addon/build_new.json addon/build.json
