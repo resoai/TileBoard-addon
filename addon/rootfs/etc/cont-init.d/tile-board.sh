@@ -5,19 +5,13 @@
 # ==============================================================================
 
 CONFIG_FOLDER=$(bashio::config 'configFolder')
+DEST_FOLDER=/var/www/tileboard/
 
-bashio::log.info 'Symlink files to dist folder'
+bashio::log.info 'Symlink user configuration files to served folder'
 
-for f in /config/$CONFIG_FOLDER/*;
-do
-    FILENAME=$(basename $f);
-    if [ $FILENAME = 'custom.css' ]
-    then
-        if [ -f "/var/www/tileboard/styles/custom.css" ]; then
-            rm /var/www/tileboard/styles/custom.css
-        fi
-        ln -s /config/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/styles/custom.css
-    else
-        ln -s /config/$CONFIG_FOLDER/$FILENAME /var/www/tileboard/$FILENAME
-    fi;
-done;
+python3 /etc/tileboard/symlink-config.py "/config/$CONFIG_FOLDER" "$DEST_FOLDER"
+
+CUSTOM_CSS_PATH="$DEST_FOLDER/styles/custom.css"
+if [ ! -f "$CUSTOM_CSS_PATH" ]; then
+    touch "$CUSTOM_CSS_PATH"
+fi
