@@ -2,7 +2,7 @@
   "name": "TileBoard",
   "version": "1.0.9",
   "slug": "tileboard",
-  "description": "Simple yet highly-customizable dashboard for Home Assistant",
+  "description": "Simple yet highly-customizable dashboard",
   "url": "https://github.com/resoai/TileBoard",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:8090]",
   "startup": "application",
