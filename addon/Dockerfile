@@ -23,6 +23,7 @@ RUN \
         curl \
         nginx \
         unzip \
+        python3 \
     && apk del --no-cache
 
 # Fetch and unpack TileBoard
