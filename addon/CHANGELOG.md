@@ -1,4 +1,17 @@
 
+### [1.0.10](https://github.com/resoai/TileBoard-addon/compare/v1.0.9...v1.0.10) (2021-04-10)
+
+
+### Bug Fixes
+
+* recursively symlink files from configFolder ([#16](https://github.com/resoai/TileBoard-addon/issues/16)) ([cb18c63](https://github.com/resoai/TileBoard-addon/commit/cb18c6357d97d87b6705135305e167836afa6223)), closes [#13](https://github.com/resoai/TileBoard-addon/issues/13)
+
+
+### Chore
+
+* update tags and container info ([#15](https://github.com/resoai/TileBoard-addon/issues/15)) ([8835680](https://github.com/resoai/TileBoard-addon/commit/883568095fca2d109513759eba2a8576231a745f))
+* **deps:** update docker base images ([591221d](https://github.com/resoai/TileBoard-addon/commit/591221de2416b0759d435e2ea517059f21c02f48))
+
 ### [1.0.9](https://github.com/resoai/TileBoard-addon/compare/v1.0.8...v1.0.9) (2021-04-07)
 
 
