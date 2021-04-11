@@ -14,7 +14,7 @@ This is the addon implementation of the TileBoard project. It allows you to only
 * [Official Git Repository](https://github.com/resoai/TileBoard)
 * [Discussion on Home Assistant Community](https://community.home-assistant.io/t/new-dashboard-for-ha/57173)
 * [Demo Video](https://youtu.be/L8JwzWNAPr8)
-  
+
 ## License
 
 MIT License
