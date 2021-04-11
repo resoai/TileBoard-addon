@@ -1,4 +1,17 @@
 
+### [1.0.11](https://github.com/resoai/TileBoard-addon/compare/v1.0.10...v1.0.11) (2021-04-11)
+
+
+### Bug Fixes
+
+* use example config if user's doesn't exist ([1fceb59](https://github.com/resoai/TileBoard-addon/commit/1fceb599a6c4dcf70062e11481c51d705ce4373e))
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.4.0 ([ead02a0](https://github.com/resoai/TileBoard-addon/commit/ead02a011f99f82f6b83bd3e445719c7e3c1d93b))
+* **dev:** better devcontainer setup ([0c376db](https://github.com/resoai/TileBoard-addon/commit/0c376dbd5992dad3716839337d64b5d7458dfb4d))
+
 ### [1.0.10](https://github.com/resoai/TileBoard-addon/compare/v1.0.9...v1.0.10) (2021-04-10)
 
 
