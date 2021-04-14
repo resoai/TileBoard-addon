@@ -23,6 +23,7 @@ Here are various configuration files that can be added to that folder:
 | ----- | ------- | ----------- |
 | `config.js` | yes | The main configuration file. You can use [config.example.js](https://github.com/resoai/TileBoard/blob/master/config.example.js) as a starting point. |
 | `styles/custom.css` | no | The stylesheet with custom CSS overrides. |
+| `images/*` | no | The extra images that can be referenced from the configuration file using relative paths. |
 | `locales/*` | no | If you want to add support for more locales than the bundled ones, you can add more locale files here. The file needs to have format `[locale-code].js`. |
 
 Note 1: Adding or removing files requires restart of the add-on. After doing that the changes to the files should get applied immediately.
