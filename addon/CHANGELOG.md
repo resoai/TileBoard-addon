@@ -1,4 +1,11 @@
 
+## [1.1.0](https://github.com/resoai/TileBoard-addon/compare/v1.0.11...v1.1.0) (2021-04-14)
+
+
+### Features
+
+* add ingress support and SSL option ([358ea2a](https://github.com/resoai/TileBoard-addon/commit/358ea2ab07a92af3f926092eb1c1b4eb6e26d22b))
+
 ### [1.0.11](https://github.com/resoai/TileBoard-addon/compare/v1.0.10...v1.0.11) (2021-04-11)
 
 
