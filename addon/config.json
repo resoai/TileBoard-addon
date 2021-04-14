@@ -4,10 +4,13 @@
   "slug": "tileboard",
   "description": "Simple yet highly-customizable dashboard",
   "url": "https://github.com/resoai/TileBoard",
-  "webui": "[PROTO:ssl]://[HOST]:[PORT:8090]",
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
+  "stage": "experimental",
   "startup": "application",
   "init": false,
   "image": "tileboard/tileboard-addon-{arch}",
+  "ingress": true,
+  "homeassistant_api": true,
   "arch": [
     "armhf",
     "armv7",
@@ -15,22 +18,24 @@
     "amd64",
     "i386"
   ],
-  "map": [
-    "config"
-  ],
+  "map": ["config", "share", "ssl"],
   "boot": "auto",
-  "hassio_api": true,
-  "hassio_role": "default",
   "ports": {
-    "80/tcp": 8090
+    "80/tcp": null
   },
   "ports_description": {
-    "80/tcp": "Dashboard interface"
+    "80/tcp": "Dashboard interface (not required for Ingress)"
   },
   "options": {
-    "configFolder": "tileboard"
+    "configFolder": "tileboard",
+    "ssl": true,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem"
   },
   "schema": {
-    "configFolder": "str"
+    "configFolder": "str",
+    "ssl": "bool",
+    "certfile": "str",
+    "keyfile": "str"
   }
 }

@@ -9,7 +9,7 @@ DEST_FOLDER=/var/www/tileboard/
 CUSTOM_CSS_PATH="$DEST_FOLDER/styles/custom.css"
 CONFIG_PATH="$DEST_FOLDER/config.js"
 
-bashio::log.info 'Symlink user configuration files to server folder'
+bashio::log.info 'Symlink user configuration files to the server folder'
 
 python3 /etc/tileboard/symlink-config.py "/config/$CONFIG_FOLDER" "$DEST_FOLDER"
 
