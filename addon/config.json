@@ -8,6 +8,7 @@
   "stage": "experimental",
   "startup": "application",
   "init": false,
+  "image": "tileboard/tileboard-addon-{arch}",
   "ingress": true,
   "homeassistant_api": true,
   "arch": [
