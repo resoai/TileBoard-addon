@@ -1,4 +1,16 @@
 
+## [1.2.0](https://github.com/resoai/TileBoard-addon/compare/v1.1.0...v1.2.0) (2021-04-14)
+
+
+### Features
+
+* add ingress support and SSL option ([#19](https://github.com/resoai/TileBoard-addon/issues/19)) ([e950fb3](https://github.com/resoai/TileBoard-addon/commit/e950fb3d28f6a199fa12d3872e900cbeb142c186))
+
+
+### Chore
+
+* **deps:** lock file maintenance ([#17](https://github.com/resoai/TileBoard-addon/issues/17)) ([67d0168](https://github.com/resoai/TileBoard-addon/commit/67d0168cb1cc34ed448ea534b5760bb7fb280834))
+
 ## [1.1.0](https://github.com/resoai/TileBoard-addon/compare/v1.0.11...v1.1.0) (2021-04-14)
 
 
