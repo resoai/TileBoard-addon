@@ -1,4 +1,11 @@
 
+### [1.2.1](https://github.com/resoai/TileBoard-addon/compare/v1.2.0...v1.2.1) (2021-04-14)
+
+
+### Bug Fixes
+
+* wrong websocket URL in direct mode ([df11c72](https://github.com/resoai/TileBoard-addon/commit/df11c720b489727c2b154f0b1ed6b72c551af5ad))
+
 ## [1.2.0](https://github.com/resoai/TileBoard-addon/compare/v1.1.0...v1.2.0) (2021-04-14)
 
 
