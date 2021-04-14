@@ -20,6 +20,6 @@ server {
 
         sub_filter_once off;
         sub_filter 'SERVER_URL_OVERRIDE = null' 'SERVER_URL_OVERRIDE = "{{ .base_url }}"';
-        sub_filter 'WS_URL_OVERRIDE = null' 'WS_URL_OVERRIDE = "{{ .websocket_url }}/api"';
+        sub_filter 'WS_URL_OVERRIDE = null' 'WS_URL_OVERRIDE = "{{ .websocket_url }}/api/websocket"';
     }
 }
