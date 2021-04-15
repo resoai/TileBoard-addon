@@ -1,4 +1,16 @@
 
+### [1.2.2](https://github.com/resoai/TileBoard-addon/compare/v1.2.1...v1.2.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* proxy /api requests in ingress ([ebb24c8](https://github.com/resoai/TileBoard-addon/commit/ebb24c81707e26267e12d1a16b7718cdf30f612e))
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.4.1 ([c4b441b](https://github.com/resoai/TileBoard-addon/commit/c4b441b2a9adbc15cda398bb1a4e392e812c0cc8))
+
 ### [1.2.1](https://github.com/resoai/TileBoard-addon/compare/v1.2.0...v1.2.1) (2021-04-14)
 
 
