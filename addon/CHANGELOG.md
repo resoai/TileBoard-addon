@@ -1,4 +1,12 @@
 
+### [1.2.6](https://github.com/resoai/TileBoard-addon/compare/v1.2.5...v1.2.6) (2021-07-21)
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.6.2 ([c8a5de8](https://github.com/resoai/TileBoard-addon/commit/c8a5de80df03af5665371a57938046ca85e58234))
+* **deps:** lock file maintenance ([#21](https://github.com/resoai/TileBoard-addon/issues/21)) ([bc354f0](https://github.com/resoai/TileBoard-addon/commit/bc354f0eed13e4f85c1b1db104c57db7da451d4a))
+
 ### [1.2.5](https://github.com/resoai/TileBoard-addon/compare/v1.2.4...v1.2.5) (2021-05-23)
 
 
