@@ -8,9 +8,13 @@ info=$(curl --silent --show-error \
         --request "GET" \
         -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
         -H "Content-Type: application/json" \
-        "http://supervisor/core/api/discovery_info")
+        "http://supervisor/core/api/config")
 
-base_url=$(bashio::jq "${info}" '.base_url')
+external_url=$(bashio::jq "${info}" '.external_url')
+internal_url=$(bashio::jq "${info}" '.internal_url')
+base_url="${external_url}"
+[ -z "$base_url" ] && base_url="${internal_url}"
+bashio::log.info "Using base URL '${base_url}'"
 # shellcheck disable=SC2001
 websocket_url="$(echo "$base_url" | sed "s/^http/ws/")"
 
