@@ -19,7 +19,11 @@ server {
         root /var/www/tileboard/;
 
         sub_filter_once off;
+        {{ if .base_url }}
         sub_filter 'SERVER_URL_OVERRIDE = null' 'SERVER_URL_OVERRIDE = "{{ .base_url }}"';
+        {{ end }}
+        {{ if .websocket_url }}
         sub_filter 'WS_URL_OVERRIDE = null' 'WS_URL_OVERRIDE = "{{ .websocket_url }}/api/websocket"';
+        {{ end }}
     }
 }
