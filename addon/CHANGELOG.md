@@ -1,4 +1,11 @@
 
+## [1.3.0](https://github.com/resoai/TileBoard-addon/compare/v1.2.8...v1.3.0) (2021-10-25)
+
+
+### Features
+
+* add option to choose whether to use external or internal URL ([#26](https://github.com/resoai/TileBoard-addon/issues/26)) ([ddd89c1](https://github.com/resoai/TileBoard-addon/commit/ddd89c19809f376ff6d4a78b5d8e42d6197260d4))
+
 ### [1.2.8](https://github.com/resoai/TileBoard-addon/compare/v1.2.7...v1.2.8) (2021-10-25)
 
 
