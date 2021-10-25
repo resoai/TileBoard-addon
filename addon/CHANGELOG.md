@@ -1,4 +1,16 @@
 
+### [1.2.8](https://github.com/resoai/TileBoard-addon/compare/v1.2.7...v1.2.8) (2021-10-25)
+
+
+### Bug Fixes
+
+* use correct URLs after core removed /discovery_info API ([#25](https://github.com/resoai/TileBoard-addon/issues/25)) ([7f862bf](https://github.com/resoai/TileBoard-addon/commit/7f862bfb9d55223e757fd4eb99575c89a20b2f59))
+
+
+### Chore
+
+* **deps:** lock file maintenance ([#22](https://github.com/resoai/TileBoard-addon/issues/22)) ([35ea48d](https://github.com/resoai/TileBoard-addon/commit/35ea48d7094da5e69646dda0a8952433b87564d2))
+
 ### [1.2.7](https://github.com/resoai/TileBoard-addon/compare/v1.2.6...v1.2.7) (2021-08-06)
 
 
