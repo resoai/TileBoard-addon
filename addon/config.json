@@ -33,12 +33,14 @@
   "options": {
     "configFolder": "tileboard",
     "ssl": true,
+    "useExternalUrl": true,
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem"
   },
   "schema": {
     "configFolder": "str",
     "ssl": "bool",
+    "useExternalUrl": "bool",
     "certfile": "str",
     "keyfile": "str"
   }
