@@ -15,6 +15,8 @@ Should you have any ideas or questions please post them on the home-assistant fo
 
 Configure the `configFolder` in the configuration tab (defaults to `tileboard`). This should be a folder inside of `config/`. Add your configuration files in the configured folder.
 
+If you want to expose TileBoard on its own port rather than only using it through the "ingress" panel, you can define the external port in the settings, choose whether to use HTTPS or not and whether to use an external or internal URL (if using external, it will still fall back to an internal URL if external is not set in "General" HA settings).
+
 Note: You can use the Home Assistant add-ons like `File editor` or `Visual Studio Code` to manage your configuration files.
 
 Here are various configuration files that can be added to that folder:
