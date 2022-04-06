@@ -23,7 +23,7 @@ server {
         proxy_set_header Connection $connection_upgrade;
 
         sub_filter_once off;
-        sub_filter 'IN_INGRESS = null' 'IN_INGRESS = true';
+        sub_filter 'IN_INGRESS = false' 'IN_INGRESS = true';
         sub_filter 'AUTH_TOKEN_OVERRIDE = null' 'AUTH_TOKEN_OVERRIDE = "{{ env "SUPERVISOR_TOKEN" }}"';
         sub_filter 'SERVER_URL_OVERRIDE = null' 'SERVER_URL_OVERRIDE = location.protocol + "//" + location.host';
         sub_filter 'REST_URL_OVERRIDE = null' 'REST_URL_OVERRIDE = location.protocol + "//" + location.host + "{{ .ingress_path }}"';
