@@ -1,4 +1,21 @@
 
+### [1.3.5](https://github.com/resoai/TileBoard-addon/compare/v1.3.4...v1.3.5) (2022-06-19)
+
+
+### Bug Fixes
+
+* disable service worker in ingress ([#32](https://github.com/resoai/TileBoard-addon/issues/32)) ([d880b2b](https://github.com/resoai/TileBoard-addon/commit/d880b2b7a4898e7473a6b1b517f47e450b8cd54d)), closes [/github.com/resoai/TileBoard/issues/819#issuecomment-1062672175](https://github.com/resoai//github.com/resoai/TileBoard/issues/819/issues/issuecomment-1062672175)
+
+
+### Chore
+
+* **bump:** TileBoard https://github.com/resoai/TileBoard/releases/tag/v2.10.0 ([abc717f](https://github.com/resoai/TileBoard-addon/commit/abc717febeb42309136d89b835ce4dec7e4921cb))
+* **deps:** lock file maintenance ([#28](https://github.com/resoai/TileBoard-addon/issues/28)) ([eabdf87](https://github.com/resoai/TileBoard-addon/commit/eabdf8728a86390bf41aa1cdd1785d31990fbf86))
+* **deps:** update actions/checkout action to v3 ([#31](https://github.com/resoai/TileBoard-addon/issues/31)) ([d13748b](https://github.com/resoai/TileBoard-addon/commit/d13748b8fdb481b203db2afd31791d293e105fbb))
+* **deps:** update actions/setup-node action to v3 ([#30](https://github.com/resoai/TileBoard-addon/issues/30)) ([5610023](https://github.com/resoai/TileBoard-addon/commit/5610023a5ed51212a8e1cb16802fcf674b59fee8))
+* **deps:** update docker/login-action action to v2 ([#33](https://github.com/resoai/TileBoard-addon/issues/33)) ([5b26333](https://github.com/resoai/TileBoard-addon/commit/5b26333c82be6074e858876d4abcd5b9d334c79f))
+* **renovate:** bump dependencies ([d768767](https://github.com/resoai/TileBoard-addon/commit/d76876750507235f40f14d20e8b6a132c895b4f7))
+
 ### [1.3.4](https://github.com/resoai/TileBoard-addon/compare/v1.3.3...v1.3.4) (2022-02-03)
 
 
