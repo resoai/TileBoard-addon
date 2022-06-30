@@ -1,6 +1,6 @@
 {
   "name": "tileboard-addon",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Home Assistant Addon for TileBoard",
   "scripts": {
     "release": "standard-version"
