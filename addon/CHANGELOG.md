@@ -1,4 +1,11 @@
 
+### [1.3.8](https://github.com/resoai/TileBoard-addon/compare/v1.3.7...v1.3.8) (2023-05-08)
+
+
+### Chore
+
+* **deps:** lock file maintenance ([#35](https://github.com/resoai/TileBoard-addon/issues/35)) ([1a88d7d](https://github.com/resoai/TileBoard-addon/commit/1a88d7da3f240971d707f2fa4d7726a100b94bdc))
+
 ### [1.3.7](https://github.com/resoai/TileBoard-addon/compare/v1.3.6...v1.3.7) (2022-06-30)
 
 
